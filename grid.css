@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+body {
+  background-color: rgba(42, 36, 36, 0.507);
+  background: url(img/woodwallB.jpg) no-repeat;
+  background-size: cover;
+  margin: 10px;
+}
+
+/* #region header */
+h1 {
+  text-align: center;
+  text-decoration: underline red;
+  font-size: 3rem;
+  padding: 1.5%;
+}
+h2 {
+  font-size: 2em;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  background-color: #a5a5a5;
+}
+/* #endregion header*/
+
+
+/* #region side_bar*/
+aside i {
+  font-size: 2.8rem;
+  /* margin-bottom: 300px; */
+  margin-left: 1rem;
+  /* !!! */
+  position: fixed;
+  top: 1rem;
+}
+.aside {
+  display: block;
+  /* min-height:60vh; */
+  width: 80px;
+  /* position: fixed; */
+  /* background-color: #393939;!!! */
+  /* padding-top: 100px; */
+  margin: 0%;
+  /* transition: 2s; */
+  /* transition: 10.5s; */
+  /* transition: 0.5s; */
+}
+.bar {
+  display: none;
+  min-height: 100vh;
+  width: 160px;
+  position: fixed;
+  /* !!! */
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+
+  /* display: block; */
+}
+nav:hover > nav {
+  display: block;
+  /* border: 1rem solid red; */
+  transition: 10.5s;
+}
+nav a {
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+}
+nav a:hover {
+  color: azure;
+}
+ul ul {
+  display: none;
+}
+.menu :hover > ul {
+  display: block;
+}
+/* #endregion side_bar*/
+
+
+/* #region main*/
+main {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.584);
+  background-size: cover;
+  padding: 1.5rem;
+  border-radius: 2%;
+  min-height: 100vh;
+  border-top: 1rem solid;
+  /* !!! */
+}
+.grid {
+  min-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 10px;
+  /* specify columns */
+  grid-template-columns: repeat(4, 1fr);
+  background: url(img/vertical2.png) no-repeat;
+  /* !!! */
+  background-size: cover;
+  border: 5px solid #000000;
+  border-radius: 2%;
+}/* grid container */
+
+/* specify items position and spanning */
+.grid figure:nth-child(1) {
+  grid-column: 4 / 2; /* until end of row */
+  /* grid-column: 2 / 4; */
+  grid-row: 1; /* same as grid-row-start: 1; grid-row-end: 2 */
+  /* background: url(img/Backgr3.jpeg) no-repeat; */
+  background: url(img/Na12.jfif) no-repeat;
+  background-size: cover;
+  border: rgb(0, 0, 0) 1rem solid;
+}
+.grid figure:nth-child(2) {
+  grid-column: 1;
+  grid-row: 4 / 2; /* up to line 4 - not including row 4 */
+  /* background: url(img/back6.jpg) no-repeat; */
+  background: url(img/Na11\ copy.jfif) no-repeat;
+  background-size: cover;
+  border: rgb(3, 3, 4) 1rem solid;
+}
+.grid figure:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+
+  background: url(img/Na11.jfif) no-repeat;
+  background-size: cover;
+  border: rgb(0, 0, 0) 1rem solid;
+}
+.grid figure:nth-child(4) {
+  grid-column: 1;
+  grid-row: 1/1;
+  /* background: url(img/back8.jpg) no-repeat; */
+
+  background: url(img/Na1.jfif) no-repeat;
+  background-size: cover;
+  border: rgb(0, 0, 0) 1rem solid;
+}
+.grid figure:nth-child(5) {
+  grid-column: 3 / span 2; /* same as 2 / 4 */
+  /* grid-column: 2 / -1;  until end of row */
+  /* grid-column: auto / span 2; will find column automatically */
+  /* grid-column: span 2; same as above */
+  grid-row: 2;
+  /* background: url(img/Back2.jpg) no-repeat; */
+  background: url(img/Na10.jfif) no-repeat;
+  background-size: cover;
+  border: black 1rem solid;
+}
+.grid figure:nth-child(6) {
+  grid-column: 1;
+  grid-row: 4 / 5;
+  /* background: url(img/Backgr3.jpeg) no-repeat; */
+  /* background-size: cover; */
+  background: url(img/Na13.jfif) no-repeat;
+  background-size: cover;
+  border: black 1rem solid;
+}
+.grid figure:nth-child(7) {
+  grid-column: 4;
+  grid-row: 3/5; /* try to remove this line! */
+  /* background: url(img/back.jpg) no-repeat; */
+
+  background: url(img/Na14.jfif) no-repeat;
+  background-size: cover;
+  border: black 1rem solid;
+}
+.grid figure:nth-child(8) {
+  grid-column: 3/5;
+  grid-row: 5; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background: url(img/Na15.jfif) no-repeat;
+  background-size: cover;
+  border: black 1rem solid;
+}
+.grid figure:nth-child(9) {
+  grid-column: 1;
+  grid-row: 5/7; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background: url(img/Na16.jfif) no-repeat;
+  background-size: cover;
+  border: black 1rem solid;
+}
+.grid figure:nth-child(10) {
+  grid-column: 2/4;
+  grid-row: 6; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background-size: cover;
+  background: url(img/Na17.jfif) no-repeat;
+  background-size: cover;
+  background-position: left;
+  border: solid 0.5rem black;
+}
+.grid figure:nth-child(11) {
+  grid-column: 2/2;
+  grid-row: 5; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background: url(img/Na18.jfif) no-repeat;
+  background-size: cover;
+  border: solid 0.5rem black;
+}
+.grid figure:nth-child(12) {
+  grid-column: 4;
+  grid-row: 1; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background: url(img/Na19.jfif) no-repeat;
+  background-size: cover;
+  border: solid 0.5rem black;
+}
+.grid figure:nth-child(13) {
+  grid-column: 4/-1;
+  grid-row: 6; /* try to remove this line! */
+  /* background: url(img/back4.jpg) no-repeat; */
+  background: url(img/Na2.jfif) no-repeat;
+  background-size: cover;
+  border: solid 0.5rem black;
+}
+.grid figure {
+  padding: 10px;
+
+  border-radius: 7px;
+  /* background: #b2dd88; */
+  /* background: url(img/back10.jpg) no-repeat; */
+  background-size: cover;
+  font-size: 2rem;
+  text-align: center;
+}
+/* #endregion main*/
+
+/* #region footer */
+footer {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  text-align: center;
+  border-top: 0.5rem solid black;
+  max-width: 1200px;
+}
+footer p {
+  color: black;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.DD {
+  margin-bottom: 10px;
+}
+/* #endregion footer */

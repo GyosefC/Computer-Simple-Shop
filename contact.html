@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact The supplier</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/c94b01cd00.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Information page</h1>
+      <h2>Please fill the page and we will call you back :</h2>
+    </header>
+    <aside>
+      <nav class="aside">
+        <i class="fa-solid fa-bars"></i>
+        <nav class="bar">
+          <a href="home.html">Home</a>
+          <a href="bool.html">Boolean Algebra</a>
+          <a href="generations.html">Generations</a>
+          <a href="Shop.html">Shop</a>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="gallery.html">Gallery</a>
+                <ul>
+                  <li>
+                    <a href="grid.html"> Grid Gallery</a>
+                  </li>
+                  <li>
+                    <a href="flex.html">Flex Gallery</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </nav>
+    </aside>
+    <div class="container">
+      <main>
+        <form>
+          <div class="info">
+            <p>
+              First Name :
+              <input
+                type="text"
+                name="name"
+                placeholder="name___"
+                pattern="[a-z]"
+                title="Enter a number 0-9 8numbers"
+              />
+            </p>
+            <p>
+              Last Name :
+              <input type="email" name="em" placeholder="___name" />
+            </p>
+            <p>
+              Email :
+              <input type="email" name="em" placeholder="***@gmail.com" />
+            </p>
+            <p>
+              Phone Number :
+              <input type="number" name="name" id="aa" placeholder="+972****" />
+            </p>
+          </div>
+          <p>
+            Gender:
+            <input type="radio" name="mgender" value="male" class="fc3" />Male
+            <input
+              type="radio"
+              name="mgender"
+              value="female"
+              class="fc4"
+            />Female
+          </p>
+          <p>
+            Working Hours :
+            <input type="checkbox" name="morning" class="fc1" />Morning
+            <input type="checkbox" name="Evening" class="fc2" />Evening
+          </p>
+        </form>
+      </main>
+      <footer>
+        <p>Comments or Special Request</p>
+
+        <textarea name="tarea" class="textarea" placeholder="Comments">
+        </textarea>
+        <div><input type="checkbox" name="accept" />I Accept The Terms</div>
+
+        <input class="sign" type="submit" value="Submit" />
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+body {
+  background-color: #cbcaca;
+}
+
+/* #region side_bar*/
+aside {
+  display: block;
+}
+nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+  display: block;
+}
+nav a {
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+}
+nav a:hover {
+  color: azure;
+}
+ul ul {
+  display: none;
+}
+.menu :hover > ul {
+  transition: 0.5s;
+  display: block;
+}
+/* #endregion side_bar*/
+
+/* #region header*/
+header {
+  max-width: 1500px;
+  text-align: center;
+  margin-left: 210px;
+}
+h1 {
+  background-color: light blanchedalmond;
+  color: black;
+  text-shadow: gray 4px 4px 8px;
+  text-decoration: underline;
+  padding: 20px;
+  font-size: 3em;
+}
+h1:hover {
+  text-decoration: underline red;
+}
+/* #endregion header*/
+
+/* #region main*/
+figure h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4px;
+}
+section h2 {
+  font-size: 2rem;
+}
+main {
+  display: block;
+  max-width: 1500px;
+  margin-right: 10px;
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  padding-left: 40px;
+}
+/* #region the_first_three_img*/
+#container {
+  width: 80%;
+  height: 350px;
+  /* center horizontally */
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+  /* flexible layout */
+  display: flex;
+  margin-top: 1%;
+}
+#container div {
+  background-position: center;
+  background-size: cover;
+  cursor: zoom-in;
+  flex: 1;
+  transition: flex 0.7s linear;
+  /* for hover effect, will learn later */
+}
+#container div:nth-of-type(1) {
+  background-image: url(img/old.jpg);
+}
+#container div:nth-of-type(2) {
+  background-image: url(img/imgall.jpg);
+}
+#container div:nth-of-type(3) {
+  background-image: url(img/new.jpg);
+}
+#container div:hover {
+  flex: 10; /* make it 5 times bigger than others */
+}
+/* #endregion the_first_three_img*/
+
+.maincontain {
+  border-top: #393939 1rem solid;
+  background-color: rgba(0, 0, 0, 0.338);
+  padding: 2%;
+} /*the first line for all the main*/
+
+p {
+  /*margin for the up and bottm */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  /*margin for the sides */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+/* #region the_first_content_section */
+section:nth-of-type(1) {
+  border: 0.3rem solid #393939;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+} /*for the first section*/
+section h2 {
+  /* border: .3rem solid black; */
+  margin: 1%;
+}
+/* #endregion the_first_content_section */
+
+/* #region the_second_content_article */
+article {
+  display: flex;
+  max-width: 100%;
+  padding-right: 6%;
+}
+.features h2 {
+  letter-spacing: 0.5px;
+}
+ol li {
+  margin: 1%;
+  font-size: 1.8rem;
+}
+article div {
+  margin: 10px;
+}
+article ol {
+  display: block;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  max-width: 100%;
+}
+article img {
+  max-width: 100%;
+}
+article {
+  padding: 2%;
+}
+
+article:nth-of-type(1) {
+  border: 0.3rem solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+article:nth-of-type(2) {
+  border: 0.3rem solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+article:nth-of-type(3) {
+  border: 0.3rem solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+article:nth-of-type(4) {
+  border: 0.3rem solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+article:nth-of-type(5) {
+  border: 0.3rem solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+/* #endregion the_second_content_articl*/
+
+/* #endregion main*/
+
+/* #region footer*/
+footer {
+  max-width: 100%;
+  margin-left: 200px;
+  margin-right: 1rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  /* border-top: .5rem solid; */
+}
+footer a {
+  text-decoration: none;
+}
+/* #endregion footer*/

@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+body {
+  /* font-family: 'Courier New', Courier, monospace; */
+  max-width: 100%;
+  min-height: 100%;
+  /* background: rgba(0, 0, 0, 0.419); */
+  background: url(img/back12.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* #region side_bar*/
+aside {
+  display: block;
+} /* for menu*/
+nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+  display: block;
+} /* for menu*/
+nav a {
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+} /* for menu buttons links*/
+ul ul {
+  display: none;
+} /* for flex/grid */
+.menu :hover > ul {
+  display: block;
+} /* for flex/grid */
+nav a:hover {
+  color: azure;
+} /* for menu buttons links*/
+/* #endregion side_bar*/
+
+/* #region header*/
+header {
+  font-size: 2.2rem;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: black;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-left: 150px;
+  padding-left: 40px;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+h1:hover {
+  color: beige;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+/* #endregion header*/
+
+/* #region main*/
+
+main {
+  margin-left: 170px;
+  /* Same as the width of the sidenav */
+  /* overflow: auto; */
+  margin-right: 10px;
+  padding-top: 1px;
+  background-color: #393939;
+  opacity: 95%;
+}
+main p {
+  display: block;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #0f6fff;
+  text-align: center;
+  /* border: 2rem solid; */
+}
+main P:hover {
+  color: white;
+  opacity: 40%;
+}
+
+#container {
+  width: 70%;
+  /* center horizontally */
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+  box-shadow: 0px 0px 14px #b5b5b5;
+  /* flexible layout */
+  display: flex;
+  flex-wrap: wrap;
+} /* for the img box */
+
+figure {
+  flex-basis: 50%; /* 2 picture in a row, try 10%, */
+  /* flex-grow will fill extra space in the container */
+  flex-grow: 1; /* to feel free space if exists */
+  position: relative; /* for .text which is absolute */
+  box-shadow: 1px 1px 3px #b5b5b5;
+  margin: 0;
+  cursor: pointer;
+} /* img */
+
+figure img {
+  width: 100%; /* full .pic size */
+  padding: 25px; /* between images */
+} /* img */
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* size equal to figure, which is adopted to image size */
+  width: 100%;
+  min-height: 100%;
+  color: #000;
+  font-family: helvetica, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+} /* img text */
+figcaption span {
+  background-color: rgba(238, 238, 238, 0.4);
+  padding: 4px;
+} /* img text */
+figcaption:hover {
+  background: url(img/Cklickmepng.png) no-repeat;
+  background-size: 100%;
+  font-weight: bold;
+  background-position: right;
+  transition: 0.3s;
+} /* to change img  */
+
+.text1 {
+  padding-top: 5px;
+  text-align: center;
+}
+.text1:hover {
+  font-size: 3.4em;
+}
+/* flex txt */
+.text2 {
+  padding-top: 5px;
+  text-align: center;
+}
+.text2:hover {
+  font-size: 3.4em;
+}
+/* grid txt */
+
+.text1 a {
+  color: black;
+  text-decoration: initial;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text1 a:hover {
+  color: #0f6fff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+} /* flex txt */
+.text2 a {
+  color: black;
+  text-decoration: initial;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.text2 a:hover {
+  color: #0f6fff;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+} /* grid txt */
+
+/* #endregion main*/
+
+/* #region footer*/
+footer {
+  margin-top: 168px;
+  margin-left: 180px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  text-align: center;
+  border-top: 0.3rem solid #0f6fff;
+  max-width: 1100%;
+  background-color: #393939;
+  opacity: 90%;
+}
+footer p {
+  color: #0f6fff;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.5em;
+  padding: 10px;
+  background-attachment: fixed;
+}
+footer p:hover {
+  color: beige;
+}
+.DD {
+  margin-bottom: 8px;
+}
+/* #endregion footer*/

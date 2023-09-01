@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+body {
+  background: url(img/woodwallB.jpg);
+  background-size: cover;
+}
+/* #region header*/
+header {
+  text-align: center;
+  padding: 15px;
+}
+header p {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #4f5e6d;
+  color: rgb(69, 44, 69);
+  opacity: 80%;
+}
+header p:hover {
+  font-size: 2.3em;
+  color: azure;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: underline black;
+  margin: 1%;
+}
+h1:hover{
+
+opacity: 40%;}
+/* #endregion header*/
+
+/* #region side_bar*/
+aside i {
+  font-size: 2.8rem;
+  /* margin-bottom: 300px; */
+  margin: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+} /* for the menu icon*/
+.aside {
+  display: block;
+  min-height: 40%;
+  width: 80px;
+  /* position: fixed; */
+  /* background-color: #393939;!!! */
+  /* padding-top: 100px;. */
+  margin: 0%;
+} /* for menu*/
+.bar {
+  display: none;
+  min-height: 100%;
+  width: 160px;
+  position: fixed;
+  /* !!! */
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+
+  /* display: block; */
+} /* for menu*/
+nav:hover > nav {
+  display: block;
+}
+nav a {
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+  max-width: 100%;
+} /* for menu buttons links*/
+nav a:hover {
+  color: azure;
+}
+ul ul {
+  display: none;
+} /* for flex/grid */
+.menu :hover > ul {
+  display: block;
+} /* for flex/grid */
+/* #endregion side_bar*/
+
+/* #region main*/
+main {
+  background: url(img/spacee.webp);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  border-radius: 2%;
+}
+/* #region first_4_img */
+#flex_style {
+  width: 50%;
+  /* center horizontally */
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+  box-shadow: 0px 0px 14px #b5b5b5;
+  /* flexible layout */
+  display: flex;
+  flex-wrap: wrap;
+}
+#flex_style figure {
+  flex-basis: 40%; /* 2 picture in a row, try 10%, */
+  /* flex-grow will fill extra space in the container */
+  flex-grow: 1; /* to feel free space if exists */
+  position: relative; /* for .text which is absolute */
+  box-shadow: 1px 1px 3px #b5b5b5;
+  margin: 0;
+  cursor: pointer;
+} /* img  */
+#flex_style figure img {
+  width: 100%; /* full .pic size */
+  padding: 20px; /* between images */
+} /* img  */
+#flex_style figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* size equal to figure, which is adopted to image size */
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-family: helvetica, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+} /* txt */
+#flex_style figcaption span {
+  background-color: rgba(238, 238, 238, 0.4);
+  padding: 4px;
+} /* txt  */
+#flex_style figcaption:hover {
+  background: url(img/GflexLo.jpg);
+  background-size: 100%;
+  color: #ff3b00;
+  font-weight: bold;
+  transition: 0.3s;
+} /* change img & txt color */
+.text1,
+.text2 {
+  padding-top: 5px;
+  text-align: center;
+} /* pic1/pic2 txt */
+
+.text3,
+.text4 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: flex-end;
+} /* pic3/pic4 txt */
+/* #endregion for_the_first_4_img*/
+
+/* #region second_img_row*/
+.flex1 {
+  width: 50%;
+  min-height: 50vh;
+  /* margin: 20px 180px; */
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid bisque;
+  background: #3dbfe6;
+  font-size: 14px;
+  color: white;
+
+  /* flexbox setup */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  /* set the h2 to the top */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.flex1 div {
+  flex-basis: calc(100% / 2); /* change to other size */
+  padding: 15px 20px;
+} /* tho col */
+
+.col1 figure {
+  background-color: #000080;
+  margin: 2rem;
+  /* border: 2rem solid red; */
+  /* transform: 2s; */
+} /* the col 1 images */
+.col1 figure figcaption {
+  display: none;
+}
+.col1 figure:hover > figcaption {
+  display: block;
+  background-color: #000080;
+}
+.col2 figure {
+  background-color: #000080;
+  margin: 2rem;
+} /* the col 1 images */
+.col2 figure figcaption {
+  display: none;
+  transition: 0.5s;
+}
+.col2 figure:hover > figcaption {
+  display: block;
+  background-color: #000080;
+}
+/* #endregion second_img_row*/
+
+/* #region for_the_third_img_column*/
+
+.roww {
+  min-height: 100px; /* height must be given for align-items (try to remove) */
+  max-width: 50%;
+
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 8px;
+  background-color: #746c6ceb;
+  border: 1px solid navy;
+
+  display: flex;
+  flex-flow: row no-wrap; /* shorthand: flex-direction and flex-wrap */
+  /* horizontal, since main axis is horizontal */
+  justify-content: center;
+  /* vertical, since cross axis is vertical */
+  align-items: center;
+}
+.roww img {
+  max-width: 100%;
+}
+.roww figure {
+  min-width: 40px;
+  min-height: 40px;
+  margin: 5px 3px;
+  text-align: center;
+  background-color: #2424b4;
+  color: white;
+  font-size: 1.5em;
+}
+/* #endregion for_the_third_img_column*/
+
+/* #endregion main*/
+
+/* #region footer*/
+footer {
+  border-top: #000 solid;
+  max-width: 80%;
+  padding: 1%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  text-align: center;
+  margin: 2% auto; /*!!!!!!!!*/
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(63, 61, 54);
+  background-color: rgb(156, 151, 141);
+  opacity: 80%;
+}
+footer p:hover{
+color: black;
+opacity: 50%;
+}
+/* #endregion footer*/
+
+header,
+main {
+  font-family: "Courier New", Courier, monospace;
+}

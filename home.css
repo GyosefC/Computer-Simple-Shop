@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+body {
+  background-color: #aca7a7;
+  padding-top: 10px;
+}
+
+/* #region side_bar*/
+aside {
+  /* for menu*/
+  display: block;
+}
+nav {
+  /* for menu*/
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+  display: block;
+}
+nav a {
+  /* for menu buttons links*/
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  /* to remove the under line */
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+}
+nav a:hover {
+  /*to change the link color */
+  color: azure;
+}
+ul ul {
+  display: none;
+}
+.menu :hover > ul {
+  display: block;
+}
+
+/*  #endregion side_bar*/
+/* #region header*/
+header {
+  /* page header h1*/
+  margin-top: -20px;
+  max-width: 1500px;
+  margin-left: 200px;
+  padding: 30px;
+}
+h1 {
+  text-align: center;
+  background-color: light blanchedalmond;
+  color: black;
+  text-shadow: gray 5px 6px 18px;
+  text-decoration: underline rgb(153, 116, 116);
+  text-align: center;
+  display: block;
+  font-size: 3em;
+  letter-spacing: 1px;
+  color: #a57033;
+}
+h1:hover {
+  text-decoration: underline black;
+}
+/* #endregion header*/
+
+/* #region main*/
+
+h2 {
+  letter-spacing: 1px;
+  font-size: 2em;
+  background-color: #f8f8f8;
+  font-style: oblique;
+  text-shadow: 2px 3px 5px #393939;
+  color: #996428;
+}
+
+.maincontain {
+  /* content main*/
+  border-top: #393939 1rem solid;
+  background-color: rgba(0, 0, 0, 0.337);
+  padding: 2%;
+  max-width: 1500px;
+}
+main {
+  display: block;
+  margin-left: 127px;
+  /* Same as the width of the sidenav */
+  padding-left: 40px;
+  overflow: auto;
+  margin-right: 10px;
+}
+
+section {
+  display: block;
+}
+p {
+  display: block;
+  /*up margin and buttom*/
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  /*the side of the page"margin"*/
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+main footer {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-top: 0.5rem solid;
+  margin-top: 2rem;
+}
+
+/* #region img*/
+#allg {
+  /*For the omage region*/
+  max-width: 1000px;
+  /* center horizontally */
+  margin: 30px auto;
+  border: 5px solid #cbcaca;
+  background: url(/img/woodwallB.jpg);
+  background-size: cover;
+  /* grid layout */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-rows: repeat(2, 100px);
+  grid-auto-rows: 80px 20px 70px;
+
+  /* grid-auto-flow: row dense; / / try also column */
+}
+
+figure:nth-of-type(2),
+figure:nth-of-type(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+figure:nth-of-type(6),
+figure:nth-of-type(7) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+figure img {
+  max-width: 100%; /* full width of figure */
+  height: 100%;
+  object-fit: cover;
+}
+figure {
+  transition: 0.4s; /* for hover effect, will learn later */
+  margin: 0;
+  cursor: pointer;
+}
+figure:hover {
+  transform: scale(1.1); /* will learn later */
+}
+/* #endregion img*/
+
+/*  #endregion main*/
+
+/* #region footer */
+.wikipedia {
+  /*the link for wikipedia*/
+  /* border: 1rem solid black; */
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: blue;
+}
+.wikipedia:hover {
+  /*To hover the link when we put the mouse on it*/
+  text-decoration: underline black;
+  color: #393939;
+}
+footer {
+  margin-left: 200px;
+  text-align: center;
+}
+/* #endregion footer */

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean Algebra</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="./style/bool.css" />
+      <script
+      src="https://kit.fontawesome.com/c94b01cd00.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container">
+      <h1>The history of Boolean Algebra</h1>
+    </header>
+    <aside>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="bool.html">Boolean Algebra</a>
+        <a href="generations.html">Generations</a>
+        <a href="Shop.html">Shop</a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="gallery.html">Gallery</a>
+              <ul>
+                <li>
+                  <a href="grid.html"> Grid Gallery</a>
+                </li>
+                <li>
+                  <a href="flex.html">Flex Gallery</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <main class="container">
+      <section>
+        <h2>
+          The computers understand the boolean language because of that we need
+          to talk about the boolean algebra , just (0,1) numbers
+        </h2>
+        <p>
+          A precursor of Boolean algebra was Gottfried Wilhelm Leibniz's algebra
+          of concepts. Leibniz's algebra of concepts is deductively equivalent
+          to the Boolean algebra of sets.
+        </p>
+        <p>
+          Boole's algebra predated the modern developments in abstract algebra
+          and mathematical logic; it is however seen as connected to the origins
+          of both fields. In an abstract setting, Boolean algebra was perfected
+          in the late 19th century by Jevons, Schröder, Huntington and others,
+          until it reached the modern conception of an (abstract) mathematical
+          structure. For example, the empirical observation that one can
+          manipulate expressions in the algebra of sets, by translating them
+          into expressions in Boole's algebra, is explained in modern terms by
+          saying that the algebra of sets is a Boolean algebra (note the
+          indefinite article). In fact, M. H. Stone proved in 1936 that every
+          Boolean algebra is isomorphic to a field of sets.
+        </p>
+        <p>
+          In the 1930s, while studying switching circuits, Claude Shannon
+          observed that one could also apply the rules of Boole's algebra in
+          this setting,[8] and he introduced switching algebra as a way to
+          analyze and design circuits by algebraic means in terms of logic
+          gates. Shannon already had at his disposal the abstract mathematical
+          apparatus, thus he cast his switching algebra as the two-element
+          Boolean algebra. In modern circuit engineering settings, there is
+          little need to consider other Boolean algebras, thus "switching
+          algebra" and "Boolean algebra" are often used interchangeably.
+        </p>
+
+        <p>
+          Efficient implementation of Boolean functions is a fundamental problem
+          in the design of combinational logic circuits. Modern electronic
+          design automation tools for VLSI circuits often rely on an efficient
+          representation of Boolean functions known as (reduced ordered) binary
+          decision diagrams (BDD) for logic synthesis and formal verification.
+        </p>
+        <p>
+          Logic sentences that can be expressed in classical propositional
+          calculus have an equivalent expression in Boolean algebra. Thus,
+          Boolean logic is sometimes used to denote propositional calculus
+          performed in this way.Boolean algebra is not sufficient to capture
+          logic formulas using quantifiers, like those from first order logic.
+        </p>
+      </section>
+      <!-- <footer> -->
+      <section>
+        <h2>Boolean Algebra Rules :</h2>
+        <div class="inline-block">
+          <div>
+            <p>x+x=x</p>
+          </div>
+          <div>
+            <p>x*x=x</p>
+          </div>
+          <div>
+            <p>x+1=1</p>
+          </div>
+
+          <div>
+            <p>x*0=0</p>
+          </div>
+
+          <div>
+            <p>x+0=x</p>
+          </div>
+          <div>
+            <p>x*1=x</p>
+          </div>
+          <div>
+            <p>x+y=y+x</p>
+          </div>
+          <div>
+            <p>x*y=y*x</p>
+          </div>
+          <div>
+            <p>(x+y)+z=x+(y+z)</p>
+          </div>
+          <div><p>(x*y)z=x(y*z)</p></div>
+          <div>
+            <p>x+x'=1</p>
+          </div>
+          <div><p>x*x'=0</p></div>
+          <div><p>x*(y+z)=x*y+x*z</p></div>
+          <div><p>x+x*y=x</p></div>
+          <div><p>x*(x+y)=x</p></div>
+          <div><p>x+x'*y=x+y</p></div>
+          <div><p>x*(x'+y)=x*y</p></div>
+          <div><p>(x')'=x</p></div>
+          <div><p>(x+y)'=x'*y'</p></div>
+          <div><p>(x*y)'=x'+y'</p></div>
+        </div>
+      </section>
+      <!-- </footer> -->
+
+      <section>
+        <h2 class="values">Values</h2>
+        <p>
+          Whereas expressions denote mainly numbers in elementary algebra, in
+          Boolean algebra, they denote the truth values false and true. These
+          values are represented with the bits (or binary digits), namely 0 and
+          1. They do not behave like the integers 0 and 1, for which 1 + 1 = 2,
+          but may be identified with the elements of the two-element field
+          GF(2), that is, integer arithmetic modulo 2, for which 1 + 1 = 0.
+          Addition and multiplication then play the Boolean roles of XOR
+          (exclusive-or) and AND (conjunction), respectively, with disjunction x
+          ∨ y (inclusive-or) definable as x + y - xy and negation ¬x as 1 − x.
+          In GF(2), − may be replaced by +, since they denote the same
+          operation; however this way of writing Boolean operations allows
+          applying the usual arithmetic operations of integers (this may be
+          useful when using a programming language in which GF(2) is not
+          implemented).
+        </p>
+        <!-- !!! -->
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>
+        Copy Right Reserved <i class="fa-solid fa-copyright"></i>
+        Yosef Ghanayim Razy Najjar
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.2%;
+}
+h1 {
+    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: block;
+  color: #96C0FF;
+  margin-top: 20px;
+  text-decoration: underline red;
+  /* margin-left: 160px; */
+  /* Same as the width of the sidenav */
+  padding-left: 40px;
+  /* color: whitesmoke; */
+}
+body {
+  background: url(./img/binaryback.jpg) no-repeat;
+  background-size: cover;
+}
+
+/*  #region side_bar*/
+aside {/* for menu*/
+  display: block;
+}
+nav {/* for menu*/
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #393939;
+  padding-top: 100px;
+  display: block;
+}
+nav a {/* for menu buttons links*/
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a5a5a5;
+  display: block;
+}
+nav a:hover {
+  color: azure;
+}
+ul ul {
+  display: none;
+}
+.menu :hover > ul {
+  display: block;
+}
+
+/*#endregion side_bar*/
+
+/* #region header */
+header {
+  display: block;
+  margin-left: 160px;
+  padding-left: 40px;
+}
+
+/* #endregion header */
+
+/* #region main*/
+main {
+   max-width: 1400px;
+  display: block;
+  margin-left: 160px;
+
+  /* Same as the width of the sidenav */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
+  background-color: rgba(2, 2, 2, 0.747);
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.6rem;
+  color: aliceblue;
+}
+h2 {
+  color: white;
+  padding: 15px;
+   margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.values{
+  
+  color: white;
+  padding: 15px;
+   margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-left: 50%;
+
+}
+
+/* #region Table*/
+div > div {
+  text-align: center;
+  font-size: 2rem;
+} /*to the table words */
+.inline-block {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-right: 18px;
+  margin-right: 2rem;
+}/*to build 4 columns */
+@media only screen and (max-width: 650px) {
+  /* when gets 650 px */
+  .inline-block {
+    grid-template-columns: repeat(2, auto);
+  } /* when gets 650 px switch from 4 to 2 colomns*/
+}/*to build 2 columns */
+.inline-block div {
+  border: 1.5px solid rgb(0, 68, 255);
+}/*the blue border */
+div p {
+  color:white;
+}/*colomns div p(table)*/
+/* #endregion Table*/
+
+/* #endregion main*/
+
+/* #region footer */
+footer {
+  max-width: 1500px;
+  margin-left: 200px;
+  margin-right: 20px;
+  text-align: center;
+  border-top: 0.5rem solid rgb(0, 125, 234);
+  font-size: 2rem;
+}
+/* #endregion footer */
